@@ -1,6 +1,6 @@
-# 🧠 NeetCode DSA Journey
+# 🧠 DSA Journey
 
-Welcome to my **NeetCode DSA Journey** — a dedicated repository where I document my step-by-step progress through the popular [NeetCode](https://neetcode.io/) Data Structures & Algorithms roadmap.
+Welcome to my ** DSA Journey** — a dedicated repository where I document my step-by-step progress through the popular [NeetCode](https://neetcode.io/) Data Structures & Algorithms roadmap.
 
 ---
 
