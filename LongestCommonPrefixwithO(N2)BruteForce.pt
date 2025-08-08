@@ -1,0 +1,61 @@
+# Example 1:
+
+# Input: strs = ["flower","flow","flight"]
+# Output: "fl"
+
+# Example 2:
+
+# Input: strs = ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+
+
+
+def LCP(strs):
+    # prefix = strs[0];
+    # hashMaps = [ {} for _ in strs];
+    # print(hashMaps);
+
+    # for index , word in enumerate(strs):
+    #     for char in word:
+    #         hashMaps[index][char] = 1 + hashMaps[index].get(char , 0);
+    # print(hashMaps); 
+    
+    # return prefix; 
+
+    # prefix = ""
+    # for word in strs:
+    #     RefWord = "";
+    #     for char in word:
+    #         RefWord = char;
+    #         break;
+    #     if RefWord ==  word[0]:
+    #         prefix = RefWord;
+
+    if not strs:
+        return "";
+
+    prefix = ""
+    for i in range(len(strs[0])):
+        refChar = strs[0][i]   # ya flower k f ko store kara ga
+
+        for word in strs[1:]:
+            if i >= len(word) or word[i] != refChar:
+               return prefix;
+
+        prefix += refChar;
+    return prefix;
+
+
+    
+
+
+
+    
+
+
+
+res1 = LCP(["flower","flow","flight"])
+res = LCP(["dog", "racecar", "car"])
+
+print(res)
