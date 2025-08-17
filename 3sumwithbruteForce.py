@@ -141,11 +141,11 @@ def threeSum(nums):
                 if nums[i] + nums[j] + nums[k] == target:
                     triplet = sorted([nums[i] , nums[j] , nums[k]])
                     # print(f"before check : {list}");
-                    if triplet not in list:
-                        list.append(triplet);
-                    
+                    # if triplet not in list:
+                    list.append(triplet);
+    uniqueTriplets = [list(x) for x in set(tuple(x) for x in list]   
     # print(sorted(list))
-    return list;
+    return uniqueTriplets;
 
 
 
